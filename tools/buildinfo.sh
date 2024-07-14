@@ -54,10 +54,7 @@ if [ -n "$BUILD_THUMBPRINT" ] ; then
   echo "ro.build.thumbprint=$BUILD_THUMBPRINT"
 fi
 
-echo "ro.aospa.device=$AOSPA_DEVICE"
-echo "ro.aospa.version=$AOSPA_DISPLAY_VERSION"
-echo "ro.aospa.version.major=$AOSPA_MAJOR_VERSION"
-echo "ro.aospa.version.minor=$AOSPA_MINOR_VERSION"
-echo "ro.aospa.build.variant=$AOSPA_BUILD_VARIANT"
+echo "ro.penguinos.device=$AOSPA_DEVICE"
+echo "ro.penguinos.build.date=`$DATE +%Y%m%d`"
 
 echo "# end build properties"
